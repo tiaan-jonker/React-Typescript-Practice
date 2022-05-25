@@ -15,8 +15,8 @@ const UserSearch: React.FC = () => {
   const [search, setSearch] = useState('')
   const [user, setUser] = useState<SearchStates>()
 
-  const handleChange = (evt: any) => {
-    setSearch(evt.target.value)
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(event.target.value)
   }
 
   const handleClick = () => {
